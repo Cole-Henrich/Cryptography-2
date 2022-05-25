@@ -91,8 +91,8 @@ public class GeneralSubstitutionEncode {
     }
     public void setKey(String[] k){
 //        if (k.length == alphabet.length) {
-            key = k;
-       // }
+        key = k;
+        // }
     }
     public void setAlphabet(char[] a){
         alphabet = a;

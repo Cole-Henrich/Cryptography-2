@@ -58,7 +58,7 @@ public class TopLevelDecrypter {
 
         if (charSet.containsPermutationsOfTwoChars(Cipher)){
             System.out.println("contains permutations of two chars");
-            TwoCharDecoder twoCharDecoder = new TwoCharDecoder(Cipher);
+            TwoCharDecoder twoCharDecoder = new TwoCharDecoder(Cipher.replaceAll("\s", ""));
                 solved = twoCharDecoder.getOutput();
                 isTwoChar = true;
                 isSolved = true;

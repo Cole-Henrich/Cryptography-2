@@ -55,7 +55,7 @@ public class TwoCharEncodePage extends StackPane {
         });
         code.setOnKeyTyped(keyEvent -> {
             if (!checkBox.isSelected()){
-                TwoCharDecoder decoder = new TwoCharDecoder(code.getText());
+                TwoCharDecoder decoder = new TwoCharDecoder(code.getText().replaceAll("\s", ""));
                 words.setText(decoder.getOutput());
             }
         });
